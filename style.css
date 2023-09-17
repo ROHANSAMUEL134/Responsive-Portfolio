@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+    font-family:'Ubuntu', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000000 ;
+    color:#FFFFFF;
+}
+
+header {
+    background-color:#E50914;
+    color: #fff;
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+a.txt { 
+    color:#000000;
+    text-decoration: none;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-family:'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+h2 {
+    color:#E50914;
+    font-family:'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+h3{
+    color:#E50914;
+    font-family:'Ubuntu', sans-serif;
+}
+p{
+    color:#FFFFFF; 
+    font-family:'Ubuntu', sans-serif;
+    font-size: larger;
+}
+
+.abc{
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 35px;
+    border-width: 5px;
+    border-color:#E50914 ;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#submit{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 15px;
+    border-width: 3px;
+    border-color:#E50914 ;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+a{
+    color:#04FF00;
+}
+
+/* styles.css or <style> tag in HTML */
+.image-container {
+    display: flex; /* Use flexbox to align image and text horizontally */
+    align-items: center; /* Center vertically within the container */
+}
+
+.circle {
+    width: 200px; /* Set the width and height to create a circle */
+    height: 200px;
+    border-radius: 50%; /* Make it circular by setting border-radius to 50% */
+    overflow: hidden; /* Hide image overflow outside the circle */
+}
+
+.circle img {
+    width: 100%; /* Make the image fill the circular container */
+    height: 100%;
+    object-fit: cover; /* Maintain the aspect ratio of the image */
+}
+
+.text {
+    
+    margin-left: 200px; /* Adjust the margin to create space between image and text */
+}
+
+/* styles.css or <style> tag in HTML */
+.glowing-text {
+    font-size: 36px;
+    text-align: center;
+    color:#E50914;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Add a white glow (adjust the color and blur as needed) */
+    animation: glow 1.5s ease-in-out infinite; /* Apply the glow animation */
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(241, 9, 9, 0.7);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(241, 5, 5, 0.9); /* Increase the glow at 50% of the animation */
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(236, 8, 8, 0.7);
+    }
+}
+
+.res
+{
+    display: flex; /* Use flexbox to center the button horizontally */
+    justify-content: center; /* Horizontally center content within the container */
+    align-items: center;
+    text-align: center;
+    margin-left: 25px;
+}
+
+.media-icons {
+    display: flex;
+    margin-top: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    padding-left: 4.2rem;
+  }
+  
+  .media-icons a {
+    color: white;
+    font-size: 2rem;
+    margin-right: 60px;
+    transition: 0.4s ease;
+  }
+  
+  .media-icons a:hover {
+    transform: scale(1.3);
+  }
+

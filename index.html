@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROHAN SAMUEL J - FULL STACK DEVELOPER</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script>
+        function validateForm() {
+  var x = document.form["Name"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+  }
+}
+
+    </script>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a class="txt" href="#about">About</a></li>
+                <li><a class="txt" href="#projects">Projects</a></li>
+                <li><a class="txt" href="#resume">Resume</a></li>
+                <li><a class="txt"href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="image-container">
+                <div class="circle">
+                    <img src="profile.jpg" alt="ROHAN SAMUEL J">
+                </div>
+                <div class="text glowing-text">
+                    <h1>ROHAN SAMUEL J</h1>
+                    <h4>FULL STACK DEVELOPER</h4>
+                </div>
+            </div>
+            <p>
+                Aspiring Full-Stack Developer eager to kickstart a career in web development. 
+                Recent graduate with a degree in B.Tech Information Technology and a solid 
+                foundation in programming languages such as HTML, CSS, and JavaScript. 
+                Enthusiastic about learning and applying front-end and back-end technologies 
+                to create innovative and user-friendly web applications. Strong problem-solving
+                skills, a commitment to detail, and a passion for staying up-to-date with industry 
+                trends. Seeking opportunities to gain hands-on experience and contribute to 
+                dynamic development teams.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects:</h2>
+            <div class="project">
+                <h3>Song Recommendation:</h3>
+                <p>This project is used to find the mood of the user 
+                    by detecting their facial expressions and 
+                    recommends a song based on their mood. 
+                It uses lot of data sets and Artificial Intelligence 
+                Technology for detection.
+            </p>
+                <a href="#" target="_blank">Live Demo</a><br>
+                <a href="#" target="_blank">GitHub Repository</a>
+            </div>
+
+            <div class="project">
+                <h3>Automation:</h3>
+                <p>This project is used to autofill the google forms, 
+                    when there is a need to fill lot of google forms
+                    this technique can be used. It uses a python library 
+                    called Selenium for automation. 
+                </p>
+                <a href="#" target="_blank">Live Demo</a><br>
+                <a href="#" target="_blank">GitHub Repository</a>
+            </div>
+            <!-- Add more projects here if you have them -->
+        </section>
+        <div class="res">
+        <section id="resume">
+            <a href="resume.png" download="resume.png">
+                <button>Download Resume</button>
+            </a>
+        </section>
+    </div>
+        <section id="contact">
+            <h2>Contact Me:</h2>
+            <form name="form">
+                Name:<br><input type="text" name="Name" placeholder="Enter Your Name:" required><br>           
+                Description:<br><textarea rows="5" col="5" name="txt" placeholder="Type Something..."></textarea>
+                <br><input id="submit" type="button" value="Submit" onclick="validateForm()">
+            </form>
+                <p style="text-align:center;">
+            
+                Thank you for visiting my portfolio. If you would like to get in touch, you can reach me at :
+            </p>
+            <div class="media-icons">
+                <a href="mailto:rohansamuel134@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                <a href="https://www.linkedin.com/in/rohan-samuel-4a096a226" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ROHANSAMUEL134" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+        </section>
+    </main>
+
+    <footer>
+        <br><br><p class="abc">&copy; 2023 ROHAN SAMUEL. All rights reserved. </p>
+    </footer>
+</body>
+</html>
+
+
+ 
