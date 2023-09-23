@@ -168,11 +168,10 @@ a{
     align-items: center;
     transition: 0.5s ease;
     padding-left: 4.2rem;
-    color:#E50914;
   }
   
   .media-icons a {
-    color: white;
+    color: #E50914;
     font-size: 2rem;
     margin-right: 60px;
     transition: 0.4s ease;
