@@ -37,8 +37,8 @@ nav li {
 a.txt { 
     color:#000000;
     text-decoration: none;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
     font-family:'Ubuntu', sans-serif;
     font-size: 25px;
     font-weight: 800;
@@ -46,13 +46,13 @@ a.txt {
 
 a:hover {
     color: #FFFFFF;
-    transform: scale(1.3);
 }
 
 h2 {
     color:#E50914;
     font-family:'Ubuntu', sans-serif;
     font-size: 25px;
+    text-align: center;
     font-weight: 800;
 }
 
@@ -104,86 +104,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-a{
-    color:#04FF00;
-}
 
-/* styles.css or <style> tag in HTML */
-.image-container {
-    display: flex; /* Use flexbox to align image and text horizontally */
-    align-items: center; /* Center vertically within the container */
-}
-
-.circle {
-    width: 200px; /* Set the width and height to create a circle */
-    height: 200px;
-    border-radius: 50%; /* Make it circular by setting border-radius to 50% */
-    overflow: hidden; /* Hide image overflow outside the circle */
-}
-
-.circle img {
-    width: 100%; /* Make the image fill the circular container */
-    height: 100%;
-    object-fit: cover; /* Maintain the aspect ratio of the image */
-}
-
-.text {
-    
-    margin-left: 200px; /* Adjust the margin to create space between image and text */
-}
-
-/* styles.css or <style> tag in HTML */
-.glowing-text {
-    font-size: 36px;
-    text-align: center;
-    color:#E50914;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Add a white glow (adjust the color and blur as needed) */
-    animation: glow 1.5s ease-in-out infinite; /* Apply the glow animation */
-}
-
-@keyframes glow {
-    0% {
-        text-shadow: 0 0 10px rgba(241, 9, 9, 0.7);
-    }
-    50% {
-        text-shadow: 0 0 20px rgba(241, 5, 5, 0.9); /* Increase the glow at 50% of the animation */
-    }
-    100% {
-        text-shadow: 0 0 10px rgba(236, 8, 8, 0.7);
-    }
-}
-
-.res
-{
-    display: flex; /* Use flexbox to center the button horizontally */
-    justify-content: center; /* Horizontally center content within the container */
-    align-items: center;
-    text-align: center;
-    margin-left: 25px;
-}
-
-.media-icons {
-    display: flex;
-    margin-top: 0.8rem;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-    padding-left: 4.2rem;
-  }
-  
-  .media-icons a {
-    color: #E50914;
-    font-size: 2rem;
-    margin-right: 60px;
-    transition: 0.4s ease;
-  }
-  
-  .media-icons a:hover {
-    transform: scale(1.3);
-    color:white;
-    
-      
-  }
 .skills {
     display: flex;
     flex-direction: column;
@@ -243,3 +164,218 @@ progress::-ms-fill {
 .prg-cont{
     border-radius: 15px;
 }
+
+.contact{
+    
+    padding-left: 580px;
+}
+
+.image-container1 {
+    display: flex; 
+    align-items: center;
+    
+    
+    }
+    .image-container2 {
+        display: flex; 
+        justify-content: space-between; 
+        padding:25px;
+        
+    }
+
+    .image {
+        max-width: 30%;
+        height: auto; 
+        transition: transform 0.3s; 
+        border-radius: 20px;
+    }
+
+    .image:hover {
+        transform: scale(1.8); 
+        align-items:center;
+    }
+
+.circle {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+
+.circle img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+.text {
+    
+    margin-left: 200px; 
+}
+
+
+.glowing-text {
+    
+    font-size: 36px;
+    text-align: center;
+    color:#E50914;
+    text-shadow: 0 0 40px #E50914;
+    animation: glow 1.5s ease-in-out infinite; 
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 10 10 30px #E50914;
+    }
+    50% {
+        text-shadow: 10 10 40px #E50914; 
+    }
+    100% {
+        text-shadow: 10 10 30px #E50914;
+    }
+}
+
+.res
+{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    margin-left: 25px;
+}
+
+.media-icons {
+    display: flex;
+    margin-top: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    padding-left: 4.2rem;
+  }
+  
+.media-icons a {
+    color: #E50914;
+    font-size: 2rem;
+    margin-right: 60px;
+    transition: 0.4s ease;
+}
+  
+.media-icons a:hover {
+    transform: scale(1.3);
+    color:white;
+}
+
+.project .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .project .boxes .box {
+    margin: 20px 0;
+    background: #E50914;
+    width: calc(100% / 3 - 50px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  
+  .box .topic p{
+    font-size: 30px;
+    font-weight: 500;
+    color: #E50914;
+  }
+  
+  .box:hover {
+    transform: scale(1.06);
+    transition: transform 0.3s ease;
+    
+  }
+
+  .topic{
+    font-size: 20px;
+    font-weight: 800;
+  }
+  
+  .project .boxes .box:hover  {
+    background: white;
+    color: #E50914;
+
+  }
+  
+  .project .boxes .box .icon {
+    height: 50px;
+    width: 50px;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #E50914;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+  }
+  
+  .box-icon {
+    margin-top: 1rem;
+  }
+  
+  .box-icon a i {
+    height: 40px;
+    width: 40px;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: #E50914;
+    margin: 0.9rem;
+  }
+  
+  .boxes .box:hover .box-icon a i {
+    background: #E50914;
+    color: white;
+  }
+
+  .boxes:hover p{
+   color:#E50914
+  }
+
+  .boxes .box:hover .icon {
+    background: #E50914;
+    color: white;
+  }
+  
+  section .content {
+    width: 80%;
+    margin: 40px auto;
+  }
+    
+
+
+   section .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  
+  
+  section .title span {
+    color: #E50914;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+  }
+  
+  
+  section .title span::after {
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
