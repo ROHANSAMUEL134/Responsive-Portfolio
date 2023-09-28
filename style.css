@@ -8,6 +8,7 @@ body {
     padding: 0;
     background-color: #000000 ;
     color:#FFFFFF;
+    padding:10px;
 }
 
 header {
@@ -16,6 +17,7 @@ header {
     font-family:'Poppins', sans-serif;
     text-align: center;
     padding: 1rem 0;
+    border-radius: 15px;
 }
 
 header h1 {
@@ -66,10 +68,6 @@ p{
     font-size: larger;
 }
 
-.abc{
-    text-align: center;
-}
-
 button {
     display: inline-block;
     padding: 15px 30px;
@@ -83,8 +81,9 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
+#submit:hover,button:hover {
+    color:#000000;
+    background-color: #FFFFFF;
 }
 
 #submit{
@@ -98,10 +97,6 @@ button:hover {
     border-width: 3px;
     border-color:#E50914 ;
     transition: background-color 0.3s ease;
-}
-
-#submit:hover {
-    background-color: #0056b3;
 }
 
 
@@ -126,7 +121,6 @@ button:hover {
 }
 progress {
     width: 100%;
-    
 }
 .skills {
     display: flex;
@@ -166,46 +160,45 @@ progress::-ms-fill {
 }
 
 .contact{
-    
-    padding-left: 585px;
+    padding-left: 570px;
 }
 
 .image-container1 {
     display: flex; 
     align-items: center;
+}
     
-    
-    }
-    .image-container2 {
-        display: flex; 
-        justify-content: space-between; 
-        padding:25px;
-        
-    }
+.image-container2 {
+    display: flex; 
+    justify-content: space-between; 
+    padding:25px;
+}
 
-    .image {
-        max-width: 30%;
-        height: auto; 
-        transition: transform 0.3s; 
-        border-radius: 20px;
-    }
+.image {
+    max-width: 30%;
+    height: auto; 
+    transition: transform 0.3s; 
+    border-radius: 20px;
+}
 
-    .image:hover {
-        transform: scale(1.8); 
-        align-items:center;
-    }
+.image:hover {
+    transform: scale(1.8); 
+    align-items:center;
+}
 
 .circle {
     width: 200px; 
     height: 200px;
     border-radius: 50%; 
     overflow: hidden; 
+    margin-left:100px;
 }
 
 .circle img {
     width: 100%; 
     height: 100%;
     object-fit: cover; 
+
 }
 
 .text {
@@ -221,6 +214,7 @@ progress::-ms-fill {
     color:#E50914;
     text-shadow: 0 0 40px #E50914;
     animation: glow 1.5s ease-in-out infinite; 
+    padding-right: 200px;
 }
 
 @keyframes glow {
@@ -247,22 +241,34 @@ progress::-ms-fill {
 .media-icons {
     display: flex;
     margin-top: 0.8rem;
-    justify-content: center;
-    align-items: center;
     transition: 0.5s ease;
     padding-left: 4.2rem;
+    background-color: #E50914;
+    max-width: 170px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 540px;
+    border-radius: 50px;
   }
   
 .media-icons a {
-    color: #E50914;
+    color:white;
     font-size: 2rem;
     margin-right: 60px;
     transition: 0.4s ease;
 }
-  
+
 .media-icons a:hover {
     transform: scale(1.3);
-    color:white;
+    
+}
+
+.media-icons:hover {
+    background-color: #FFFFFF;
+}
+
+.media-icons:hover a{
+    color: #E50914;
 }
 
 .project .boxes {
@@ -300,13 +306,13 @@ progress::-ms-fill {
     font-weight: 800;
   }
   
-  .project .boxes .box:hover  {
+  .project .boxes .box:hover {
     background: white;
     color: #E50914;
 
   }
   
-  .project .boxes .box .icon {
+  .project .boxes .box .icon  {
     height: 50px;
     width: 50px;
     background: white;
@@ -340,7 +346,7 @@ progress::-ms-fill {
     color: white;
   }
 
-  .boxes:hover p{
+  .box:hover p{
    color:#E50914
   }
 
@@ -379,3 +385,13 @@ progress::-ms-fill {
     transform: translateX(-50%);
   }
   
+  footer{
+    height: 30px;
+    background-color: #E50914;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2px;
+    border-radius: 15px;
+    text-align: center;
+    
+  }
