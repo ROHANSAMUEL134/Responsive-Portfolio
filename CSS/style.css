@@ -242,7 +242,7 @@ h3{
         }
         70%,90%
         {
-            width:70%;
+            width:80%;
         }
     }
     @keyframes desig2
@@ -253,7 +253,7 @@ h3{
     }
     70%,90%
     {
-        width:75%;
+        width:85%;
     }
 }
 }
@@ -437,7 +437,7 @@ div[role="progressbar"] {
 
 @media (max-width:600px) {
     .circle{
-        margin-left: 90px;
+        margin-left: 50px;
     }
 }
 
