@@ -4,51 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROHAN SAMUEL J - FULL STACK DEVELOPER</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <script>
-        function validateForm() {
-  var x = document.form["Name"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-  }
-}
-
-    </script>
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script src="Script/script.js"></script>
+  
 </head>
 <body>
+
+  <div class="scroll-button">
+    <a href="#top"><i class="fas fa-circle-up fa-beat"></i></a>
+  </div>
+
+  <video autoplay muted loop id="video-background">
+    <source src="BG Video/Space BG.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div id="video-content">
+   
     <header>
-        
-        <nav>
-            <ul>
-                <li><a class="txt" href="#about">About</a></li>
-                <li><a class="txt" href="#skillset">SkillSet</a></li>
-                <li><a class="txt" href="#certifications">Certifications</a></li>
-                <li><a class="txt" href="#projects">Projects</a></li>
-                <li><a class="txt" href="#resume">Resume</a></li>
-                <li><a class="txt"href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+          <div class="container">
+              <a class="navbar-brand d-lg-none fon" href="#">Portfolio</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto mr-auto">
+                      <li class="nav-item mr-5">
+                          <a class="nav-link hd-txt" href="#top">About</a>
+                      </li>
+                      <li class="nav-item mr-5">
+                          <a class="nav-link hd-txt" href="#sklst">SkillSet</a>
+                      </li>
+                      <li class="nav-item mr-5">
+                          <a class="nav-link hd-txt" href="HTML/certifications.html">Certifications</a>
+                      </li>
+                      <li class="nav-item mr-5">
+                          <a class="nav-link hd-txt" href="#prjct">Projects</a>
+                      </li>
+                      <li class="nav-item mr-5">
+                          <a class="nav-link hd-txt" href="Images/resume.png">Resume</a>
+                      </li>
+                      <li class="nav-item mr-5">
+                          <a class="nav-link hd-txt" href="#cntct">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
     </header>
 
-    <main>
+    <section id="top"></section>
+    <br><br><br>
+
+    <main class="container">
         <section id="about">
             <h2>About Me</h2>
-            <div class="image-container1">
-                <div class="circle">
-                    <img src="profile.jpg" alt="ROHAN SAMUEL J">
-                </div>
-                <div class="text glowing-text">
-                    <h1>ROHAN SAMUEL J</h1>
-                    <h3>FULL STACK DEVELOPER</h3>
-                </div>
-            </div>
+            <div class="container img-container1">
+              <div class="row justify-content-between align-items-center">
+                  <div class="col-md-3">
+                      <div class="circle">
+                          <img src="Images/profile.jpg" alt="ROHAN SAMUEL J" class="img-fluid">
+                      </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                  <div class="col-md-8">
+                      <div class="text glowing-text">
+                        <div class="seesaw">
+                          <h1 class="name">
+                            ROHAN SAMUEL J
+                          </h1>
+                        </div>
+                          <h3 data-text="FULLSTACK" class="designation1">FULLSTACK</h3>
+                          <h3 data-text="DEVELOPER" class="designation2">DEVELOPER</h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
             <p>
                 Aspiring Full-Stack Developer eager to kickstart a career in web development. 
-                Recent graduate with a degree in B.Tech Information Technology and a solid 
-                foundation in programming languages such as HTML, CSS, and JavaScript. 
+                Pursuing 3rd Year in B.Tech Information Technology and a solid foundation in 
+                programming languages such as Python, HTML, CSS, Bootstrap and JavaScript. 
                 Enthusiastic about learning and applying front-end and back-end technologies 
                 to create innovative and user-friendly web applications. Strong problem-solving
                 skills, a commitment to detail, and a passion for staying up-to-date with industry 
@@ -56,205 +99,555 @@
                 dynamic development teams.
             </p>
         </section>
+
+        <section id="sklst"></section><br><br><br>
+
         <section id="skillset">
             <h2>Skillset</h2>
-            <div class="skills">
-                <div class="skill">
-                    <span class="label">Python</span>
-                    <progress max="73" value="73" style="padding-left: 48px;"></progress>100%
+              <div class="container">
+                  <div class="skill container">
+                    <div class="skil" style="flex:1;">
+                      <div class="skils"><b>HTML</b></div>
+                      <div class="skils"><b>CSS</b></div>
+                      <div class="skils"><b>JavaScript</b></div>
+                      <div class="skils"><b>BootStrap</b></div>
+                    </div>
+                    <div class="skills skil" style="flex:10;">
+                        <div><span style="width:95%"></span></div>
+                        <div><span style="width:90%"></span></div>
+                        <div><span style="width:85%"></span></div>
+                        <div><span style="width:80%"></span></div>
+                    </div>
+                    <div class="skil" style="flex:1;">
+                        <span><b>95%</b></span>
+                        <span><b>90%</b></span>
+                        <span><b>85%</b></span>
+                        <span><b>80%</b></span>
+                    </div>
+                </div><br><br>
+                <div class="circle-skill row">
+                      <div class="col-md-3 col-5">
+                          <div role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="--value:95">Python-95</div>
+                      </div>
+                      <div class="col-md-3 col-5">
+                          <div role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="--value:90">C-90</div>
+                      </div>
+                      <div class="col-md-3 col-5">
+                          <div role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="--value:85">Java-85</div>
+                      </div>
+                      <div class="col-md-3 col-5">
+                          <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="--value:85">C++-85</div>
+                      </div>
                 </div>
-                <div class="skill">
-                    <span class="label">HTML & CSS</span>
-                    <progress max="70" value="70" style="padding-left: 5px;"></progress>100%
+         </section>
+
+         <section id="prjct"></section>
+         <br><br><br>
+         
+
+         <section class="project" id="projects">
+          <div class="content">
+              <div class="title"><h2 style="font-size: 35px;">Projects</h2></div>
+              <div class="boxes row">
+
+                  <div class="box col-md-5 col-12">
+                      <div class="icon">
+                          <i class="fa-solid fa-user"></i>
+                      </div>
+                      <div class="topic">Portfolio</div>
+                        <a href="https://rohan-samuel-portfolio.netlify.app/" target="_blank">
+                            <img class="project-img" src="Project Images/Portfolio.PNG" alt=".">
+                        </a>
+                      <p class="txt2">
+                        🚀 Crafting Digital Experiences with Passion
+                        🎨 Web Developer & Designer | Exploring the Art of Code
+                        💡 Turning Ideas into Interactive Web Realities ✨ 
+                          <br><br>
+                          <span>Tools Used :</span> HTML, CSS, Javascript & Bootstrap.
+                      </p>
+                      <div class="box-icon">
+                          <a href="https://rohan-samuel-portfolio.netlify.app/" target="_blank">
+                                <i class="fab fa-chrome"></i></a>
+                          <a href="https://github.com/ROHANSAMUEL134/Responsive-Portfolio" target="_blank">
+                                <i class="fab fa-github"></i></a>
+                      </div>
+                  </div>
+
+                  <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <div class="topic">Gamix</div>
+                      <a href="https://resplendent-druid-8dc83d.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/Gamix.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        🎮 Level Up Your Gaming Experience
+                        🕹️ Dive into the World of Gaming Adventures
+                        🔥 Where Gamers Unite for Epic Journeys and High Scores 🚀
+                        <br><br>
+                        <span>Tools Used :</span> HTML, CSS, Javascript & Bootstrap.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://resplendent-druid-8dc83d.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Gamix" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
                 </div>
-                <div class="skill">
-                    <span class="label">Javascript</span>
-                    <progress max="63" value="63" style="padding-left: 23px;"></progress>90%
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="topic">E-Commerce Website</div>
+                      <a href="https://lighthearted-truffle-bca37e.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/E-Commerce Website.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        🛒 Shop till You Drop | Your One-Stop solution to E-Commerce Destination
+                        💼 Discover, Browse, and Buy | Your Online Retail Therapy
+                        🎁 Where Quality Meets Convenience | Unveil a World of Shopping Pleasure 🛍️
+                        <br><br>
+                        <span>Tools Used :</span> HTML, CSS, Javascript & Bootstrap.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://lighthearted-truffle-bca37e.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/E-Commerce-Website" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
                 </div>
-                <div class="skill">
-                    <span class="label">C</span>
-                    <progress max="69" value="69" style="padding-left: 99px;"></progress>90%
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <div class="topic">Gym Website</div>
+                      <a href="https://grand-kitten-77f75f.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/Gym Website.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        💪 Unleash Your Inner Strength | Your Fitness Journey Starts Here
+                        🏋️‍♂️ Sweat, Train, Achieve | Elevate Your Fitness Goals
+                        🌟 Transform Your Life, One Rep at a Time | Welcome to Our Fitness Community💥
+                        <br><br>
+                        <span>Tools Used :</span> HTML, CSS, Javascript & Bootstrap.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://grand-kitten-77f75f.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Gym-Website" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
                 </div>
-                <div class="skill">
-                    <span class="label">Java</span>
-                    <progress max="59" value="59" style="padding-left: 72px;"></progress>80%
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <div class="topic">Jet Set Go</div>
+                      <a href="https://symphonious-axolotl-ac5ba9.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/Jet Set Go.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        🌍 Explore the World | Your Journey Begins Here
+                        ✈️ Wander, Discover, Thrive | Elevate Your Travel Adventures
+                        🌟 Transform Your Getaways, One Destination at a Time | Welcome to JetSetGo! ✨
+                        <br><br>
+                        <span>Tools Used :</span> HTML, CSS & Bootstrap.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://symphonious-axolotl-ac5ba9.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Jet-Set-Go" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
                 </div>
-                <div class="skill">
-                    <span class="label">C++</span>
-                    <progress max="59" value="59" style="padding-left: 76px;"></progress>80%
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa fa-cloud-sun"></i>
+                    </div>
+                    <div class="topic">Weather Application</div>
+                    <a href="https://deluxe-truffle-b58f09.netlify.app/" target="_blank">
+                        <img class="project-img" src="Project Images/Weather Application.PNG" alt=".">
+                    </a>
+                    <p class="txt2">
+                        🌦️Stay Informed,Stay Prepared| Your Weather Forecast Hub
+                        ☀️Explore Weather Conditions| Where Every Day Begins with a Forecast
+                        🌧️Sunshine or Showers,We've Got You Covered| Your Ultimate Weather Source⛅
+                        <br><br>
+                        <span>Tools Used :</span> HTML, CSS & Javascript.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://deluxe-truffle-b58f09.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Weather-Application" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-check-square"></i>
+                    </div>
+                    <div class="topic">To-Do List</div>
+                      <a href="https://frabjous-faun-06d6b6.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/To-Do List.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        ✅ Stay Organized, Get Things Done | Your Ultimate To-Do List
+                        📝 Manage Tasks with Ease | Where Every Day is a Productive Day
+                        📅 Plan, Prioritize, and Conquer | Your Personal Task Manager at Your Fingertips 🚀
+                        <br><br>
+                        <span>Tools Used :</span> HTML, CSS & Javascript.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://frabjous-faun-06d6b6.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/To-Do-List" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <div class="topic">Calculator</div>
+                      <a href="https://musical-kitten-c7a617.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/Calculator.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        🧮 Crunch the Numbers Effortlessly | Your Handy Calculator App
+                        ➕ Simple, Smart, and Always Ready | Making Math a Breeze
+                        🔢 From Basic Arithmetic to Complex Calculations | Your Pocket Calculator Companion🌟
+                    <br><br>
+                    <span>Tools Used :</span> HTML, CSS & Javascript.
+                    </p>    
+                    <div class="box-icon">
+                        <a href="https://musical-kitten-c7a617.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Calculator" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-thermometer-full"></i>
+                    </div>
+                    <div class="topic">Temperature Converter</div>
+                    <a href="https://luxury-fox-34f510.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/Temperature Converter.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        🌡️ Convert Temperatures with Ease | Your Temperature Converter App
+                        ❄️ Switch Between Celsius, Fahrenheit, and More | Instant Temperature Solutions
+                        🌞 Make Weather Conversions a Breeze | Your Handy Temperature Companion 🌐
+                        <br><br>
+                    <span>Tools Used :</span> HTML, CSS & Javascript.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://luxury-fox-34f510.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Temperature-Converter" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="topic">Landing Page</div>
+                    <a href="https://moonlit-sunshine-05929a.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/Landing Page.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        🚀 Welcome to my Landing Page | Where First Impressions Take Flight
+                        🌟 Discover, Connect, and Explore | Your Gateway to an Exciting Journey
+                        📄 Start Your Adventure Here | Find Out What Awaits Behind the Landing Page ✨
+                        <br><br>
+                    <span>Tools Used :</span> HTML & CSS.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://moonlit-sunshine-05929a.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Landing-Page" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <div class="topic">PS4 Shopping</div>
+                    <a href="https://fascinating-cascaron-bc29e7.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/PS4 Shopping.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        🎮 Elevate Your Gaming Experience | The Ultimate PS4 Shopping Destination
+                        🛒 Explore, Select, and Conquer | Your One-Stop Source for PlayStation Gaming
+                        🕹️ Get Ready to Play | Where Every Click Leads to Gaming Bliss 🚀
+                        <br><br>
+                    <span>Tools Used :</span> HTML & CSS.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://fascinating-cascaron-bc29e7.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/PS4-Shopping" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-coffee"></i>
+                    </div>
+                    <div class="topic">Starbucks Landing Page</div>
+                    <a href="https://ornate-brigadeiros-dd3a6d.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/Starbucks Landing Page.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        ☕ Sip, Savor, and Satisfy | Welcome to Starbucks at Your Fingertips
+                        🍰 Explore Coffee Bliss and More | Your Starbucks Experience Begins Here
+                        🌟 Start Your Day with a Smile | Where Every Visit is a Starbucks Adventure 🌿
+                        <br><br>
+                    <span>Tools Used :</span> HTML & CSS.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://ornate-brigadeiros-dd3a6d.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Starbucks-Landing-Page" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+                    <div class="topic">Netflix Clone</div>
+                    <a href="https://remarkable-jalebi-91bfa1.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/Netflix Clone.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        🎥 Experience Netflix, Reimagined | Your Netflix Clone Journey Begins
+                        📺 Discover Movie Magic | A Replica of the Streaming Giant
+                        🍿 Movie Nights, Redefined | Watch, Enjoy, and Dive In ✨
+                        <br><br>
+                    <span>Tools Used :</span> HTML, CSS & JavaScript.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://remarkable-jalebi-91bfa1.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Netflix-Clone" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fab fa-spotify"></i>
+                    </div>
+                    <div class="topic">Spotify Clone</div>
+                    <a href="https://glowing-cassata-5ba09c.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/Spotify clone.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        🎶 Dive into Music Paradise | Your Spotify Clone Experience Starts Now
+                        🔊 Unlimited Tunes, Endless Vibes | Emulating the Sound of Spotify
+                        📱 Playlists, Discoveries, and Grooves | Your Musical Journey Awaits 🎧
+                        <br><br>
+                    <span>Tools Used :</span> HTML, CSS & JavaScript.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://glowing-cassata-5ba09c.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Spotify-Clone" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-area-chart"></i>
+                    </div>
+                    <div class="topic">Sahara Tourism</div>
+                    <a href="https://unique-begonia-342da4.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/Sahara Tourism.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        🌄 Explore the Majestic Sahara | Your Gateway to Desert Adventure
+                        🐪 Unveil the Wonders of the Sands | Discover Sahara's Rich Culture and Landscapes
+                        🏜️ Journey into the Dunes | Where Every Visit Transforms into an Oasis of Memories 🌞
+                        <br><br>
+                    <span>Tools Used :</span> HTML & CSS.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://unique-begonia-342da4.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Sahara-Tourism" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div class="topic">Food Lab Farming Wesite</div>
+                    <a href="https://joyful-macaron-2178e7.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/Food Lab Farming Website.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        🌱 Cultivate, Savor, and Grow | Your Food Lab Farming Experience Begins
+                        🍅 Nurturing Flavor at Its Roots | A Taste of Sustainable Agriculture
+                        🍽️ From Farm to Table | Where Freshness Meets Culinary Innovation 🚜
+                        <br><br>
+                    <span>Tools Used :</span> HTML, CSS & Bootstrap.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://joyful-macaron-2178e7.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Food-Lab-Farming-Website" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-futbol"></i>
+                    </div>
+                    <div class="topic">Messi vs Ronaldo</div>
+                    <a href="https://exquisite-frangollo-989d2b.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/Messi vs Ronaldo.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        ⚽ The Ultimate Showdown | Cast Your Vote for Messi vs. Ronaldo
+                        🏆 Football's Greatest Rivalry | Have Your Say in the Debate
+                        🥅 Who's Your Football Legend? | Cast Your Ballot and Join the Match of Opinions ⚡         
+                        <br><br>
+                    <span>Tools Used :</span> HTML & CSS.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://exquisite-frangollo-989d2b.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Messi-vs-Ronaldo" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <div class="topic">Responsive Login Page</div>
+                    <a href="https://silver-conkies-5150ea.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/Responsive Login Page.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        🔒 Seamless Access, Anytime, Anywhere | Your Responsive Login Experience
+                        💻 Login with Ease on Any Device | Stay Connected with Convenience
+                        📱 Secure, User-Friendly, and Always Accessible | Welcome to Effortless Authentication 🚀         
+                        <br><br>
+                    <span>Tools Used :</span> HTML, CSS & Bootstrap.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://silver-conkies-5150ea.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Responsive-Login-Page" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-bank"></i>
+                    </div>
+                    <div class="topic">Kingston Student Portal</div>
+                    <a href="https://friendly-bubblegum-bf05e0.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/Kingston Student Portal.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        🎓 Your College Journey, Simplified | Explore Your Student Portal
+                        📚 Access Resources, Stay Informed, Excel Academically | Your Academic Hub
+                        💻 Connect, Learn, and Thrive | Where Your College Adventure Unfolds 🌟
+                        <br><br>
+                    <span>Tools Used :</span> HTML, CSS & Javascript.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://friendly-bubblegum-bf05e0.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Kingston-Student-Portal" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-12">
+                    <div class="icon">
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                    <div class="topic">GATE Login Page</div>
+                    <a href="https://sparkly-otter-892012.netlify.app/" target="_blank">
+                      <img class="project-img" src="Project Images/GATE Login Page.PNG" alt=".">
+                  </a>
+                    <p class="txt2">
+                        🚀 Unlock Your GATE Success | Welcome to the GATE Login Portal
+                        📖 Your Gateway to Academic Excellence | Access, Prepare, and Achieve
+                        🔒 Secure, Streamlined, and Ready for Your Journey | Where Future Engineers Begin 🌟
+                        <br><br>
+                    <span>Tools Used :</span> HTML & CSS.
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://sparkly-otter-892012.netlify.app/" target="_blank">
+                            <i class="fab fa-chrome"></i></a>
+                        <a href="https://github.com/ROHANSAMUEL134/Gate-Login-Page" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
-        </section>
+          </div>
+      </section>
 
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <div class="image-container2">
-                <img class="image" src="DSAP.jpg" alt="Image 1">
-                <img class="image" src="Data Science for Engineers.jpg" alt="Image 2">
-                <img class="image" src="Programming in Modern C++.jpg" alt="Image 3">
-            </div>
-        </section>
-
-       <section class="project" id="projects">
-            <div class="content">
-              <div class="title"><span style="font-size: 35px; padding-top: 30px;">Projects</span></div>
-              <div class="boxes">
-                <div class="box">
-                  <div class="icon">
-                    <i class="fa-solid fa-film"></i>
-                  </div>
-                  <div class="topic">Netflix Clone</div>
-                  <p class="txt2">
-                    It is an Exact replica of the Netflix Website , designed using HTML & CSS. 
-                  </p>
-                  <div class="box-icon">
-                    <a href="https://remarkable-jalebi-91bfa1.netlify.app/" target="_blank"><i class="fab fa-chrome"></i></a>
-                    <a href="https://github.com/ROHANSAMUEL134/Netflix-Clone" target="_blank"><i
-                        class="fab fa-github"></i></a>
-                  </div>
-                  </div>
-
-                  
-                <div class="box">
-                  <div class="icon">
-                    <i class="fa fa-user-secret"></i>
-                  </div>
-                  <div class="topic">Portfolio</div>
-                  <p class="txt2">
-                    It is my Personal Portfolio Website , developed using HTML, CSS & Javascript.
-                  </p>
-                  <div class="box-icon">
-                    <a href="https://rohan-samuel-portfolio.netlify.app/" target="_blank"><i class="fab fa-chrome"></i></a>
-                    <a href="https://github.com/ROHANSAMUEL134/Responsive-Portfolio" target="_blank"><i class="fab fa-github"></i></a>
-                  </div>
-                </div>
-
-                <div class="box">
-                  <div class="icon">
-                    <i class="fa fa-cloud-sun"></i>
-                  </div>
-                  <div class="topic">Weather Application</div>
-                  <p class="txt2">
-                     Developed an amazing Weather Forecasting Application, developed using HTML,CSS & Javascript.
-                  </p>
-                  <div class="box-icon">
-                    <a href="https://deluxe-truffle-b58f09.netlify.app/" target="_blank"><i class="fab fa-chrome"></i></a>
-                    <a href="https://github.com/ROHANSAMUEL134/Weather-Application" target="_blank">
-                      <i class="fab fa-github"></i></a>
-                  </div>
-                </div>
-
-                <div class="box">
-                  <div class="icon">
-                    <i class="fa-solid fa-calculator"></i>
-                  </div>
-                  <div class="topic">Calculator</div>
-                  <p class="txt2">
-                    Amazing Web Calculator designed using HTML, CSS & Javascript.
-                  </p>
-                  <div class="box-icon">
-                    <a href="https://musical-kitten-c7a617.netlify.app/" target="_blank"><i class="fab fa-chrome"></i></a>
-                    <a href="https://github.com/ROHANSAMUEL134/Calculator" target="_blank"><i
-                        class="fab fa-github"></i></a>
-                  </div>
-                </div>
-
-                <div class="box">
-                  <div class="icon">
-                    <i class="fa-solid fa-bell"></i>
-                  </div>
-                  <div class="topic">Alarm Clock</div>
-                  <p class="txt2">
-                    It is an simple Alarm Clock designed usign Python and its famous GUI Tkinter, 
-                    it also uses various libraries like Datetime, Tkinter.
-                  </p>
-                  <div class="box-icon">
-                    
-                    <a href="https://github.com/ROHANSAMUEL134/Alarm-Clock" target="_blank">
-                      <i class="fab fa-github"></i></a>
-                  </div>
-                </div>
-        
-                <div class="box">
-                  <div class="icon">
-                    <i class="fa-solid fa-gears"></i>
-                  </div>
-                  <div class="topic">ChatGPT</div>
-                  <p class="txt2">
-                    Chatbot developed using Python by integating the API key using openai module.
-                  </p>
-                  <div class="box-icon">
-                    <a href="https://github.com/ROHANSAMUEL134/Chatgpt" target="_blank">
-                      <i class="fab fa-github"></i></a>
-                  </div>
-                </div>
-
-                <div class="box">
-                  <div class="icon">
-                    <i class="fa-solid fa-music"></i>
-                  </div>
-                  <div class="topic">Song Recommenation</div>
-                  <p class="txt2">
-                   It is my major project till date, which was developed to recommend songs based on 
-                   their user moods by capturing their face and detetcting  their facial expression.
-                   this uses various datasets and openai module to achieve detection of mood.
-                  </p>
-                  <div class="box-icon">
-                    <a href="https://github.com/ROHANSAMUEL134/Song-Recommendation" target="_blank">
-                      <i class="fab fa-github"></i></a>
-                  </div>
-                </div>
-        
-                <div class="box">
-                  <div class="icon">
-                    <i class="fa fa-history"></i>
-                  </div>
-                  <div class="topic">Automation</div>
-                  <p class="txt2">
-                    It is an simple Automation page developed using Python , 
-                    it is used to fill forms like Google forms spontaneously, by using Selenium library.
-                  </p>
-                  <div class="box-icon">
-                    <a href="https://github.com/ROHANSAMUEL134/Automation"
-                      target="_blank"><i class="fab fa-github"></i></a>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-        </section>
-        <div class="res">
-        <section id="resume">
-            <a href="resume.png" download="resume.png">
-                <button>View Resume</button><br><br>
-            </a>
-        </section>
-        </div>
-        <section id="contact">
+      <section id="cntct"></section>
+      <br><br><br>
+      
+      <section id="contact">
             <h2>Contact Me</h2>
-            <form class="contact" name="form">
-                Name:<br><input style="width: 160px;" type="text" name="Name" placeholder="Enter Your Name:" required><br> <br>          
-                Description:<br><textarea rows="5" col="7" name="txt" placeholder="Type Something..."></textarea>
-                <br><input id="submit" type="button" value="Submit" onclick="validateForm()">
-            </form><br><br>
+            <div class="contact">
+            <form name="form">
+                Name:<br><input style="width: 350px;" type="text" name="Name" placeholder="Enter Your Name:" required><br> <br>          
+                Description:<br><textarea style="width: 350px;" rows="5" col="7" name="txt" placeholder="Type Something..."></textarea>
+                <br><button id="submit" type="submit" value="Submit">Submit</button>
+            </form>
+          </div>
+          <br><br>
                 <p style="text-align:center;">
-            
-                Thank you for visiting my portfolio. If you would like to get in touch, you can reach me at :
+            Thank you for visiting my portfolio. If you would like to get in touch, you can reach me at :
             </p>
-            <div class="media-icons">
-                <a href="mailto:rohansamuel134@gmail.com" target="_blank" rel="noopener noreferrer">
+            <div class="row">
+              <div class="col-md-5 col-3"></div>
+                <div class="col-md-2 col-6 media-icons">
+                  <a href="mailto:rohansamuel134@gmail.com" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-envelope"></i>
                   </a>
-                <a href="https://www.linkedin.com/in/rohan-samuel-4a096a226" target="_blank">
-                  <i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/ROHANSAMUEL134" target="_blank"><i class="fab fa-github"></i></a>
-              </div>
+                  <a href="https://www.linkedin.com/in/rohan-samuel-4a096a226" target="_blank">
+                    <i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/ROHANSAMUEL134" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              <div class="col-md-5 col-3"></div>
+            </div>
+
         </section>
     </main><br><br>
-
     <footer>
-        <p class="foot">&copy; 2023 ROHAN SAMUEL. All rights reserved. </p>
+      <p class="foot">&copy; 2023 ROHAN SAMUEL. All rights reserved. </p>
     </footer>
+    </div>
 </body>
 </html>
 
