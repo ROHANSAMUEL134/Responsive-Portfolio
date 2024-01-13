@@ -13,7 +13,6 @@ body {
     box-sizing: border-box;
     scroll-behavior: smooth;
     user-select: none;
-
 }
 
 ::-webkit-scrollbar {
@@ -25,20 +24,20 @@ body {
 }
   
 ::-webkit-scrollbar-thumb {
-    background: #E50914;
+    background: #0077A1;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
   
 ::-webkit-scrollbar-thumb:hover {
-    background: #E50914;
+    background: #0077A1;
 }
 
 .scroll-button a{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    color: #E50914;
+    color: #0077A1;
     padding: 7px 12px;
     font-size: 30px;
     border-radius: 15px;
@@ -58,8 +57,9 @@ body {
 
 header {
     position: fixed;
-    background-color:#E50914;
+    background-color:#0077A1;
     font-family:'Poppins', sans-serif;
+    border: 2px solid white;
     border-radius: 15px;
     margin:7px;
     margin-top: -10px;
@@ -68,7 +68,7 @@ header {
 }
 
 h2 {
-    color:#E50914;
+    color:#0077A1;
     font-family:'Ubuntu', sans-serif;
     font-size: 30px;
     text-align: center;
@@ -77,7 +77,7 @@ h2 {
 }
 
 h3{
-    color:#E50914;
+    color:#0077A1;
     font-family:'Ubuntu', sans-serif;
 }
 
@@ -177,12 +177,12 @@ h3{
 
 .designation1{
     color:rgba(0,0,0,0);
-    -webkit-text-stroke: 0.1vw #E50914;
+    -webkit-text-stroke: 0.1vw #0077A1;
 }
 
 .designation2{
     color:rgba(0,0,0,0);
-    -webkit-text-stroke: 0.1vw #E50914;
+    -webkit-text-stroke: 0.1vw #0077A1;
 } 
 
 .designation1::before{
@@ -191,8 +191,8 @@ h3{
     left:20;
     width:0%;
     height:100%;
-    color:#E50914;
-    -webkit-text-stroke: 0.1vw #E50914;
+    color:#0077A1;
+    -webkit-text-stroke: 0.1vw #0077A1;
     overflow: hidden;
     animation: desig1 5s linear infinite;
 }
@@ -215,8 +215,8 @@ h3{
     left:20;
     width:0%;
     height:100%;
-    color:#E50914;
-    -webkit-text-stroke: 0.1vw #E50914;
+    color:#0077A1;
+    -webkit-text-stroke: 0.1vw #0077A1;
     overflow: hidden;
     animation: desig2 5s linear infinite;
 }
@@ -242,24 +242,24 @@ h3{
         }
         70%,90%
         {
-            width:85%;
+            width:70%;
         }
     }
     @keyframes desig2
-{
-    0%,10%,100%
     {
-        width:0%
+        0%,10%,100%
+        {
+            width:0%
+        }
+        70%,90%
+        {
+            width:75%;
+        }
     }
-    70%,90%
-    {
-        width:90%;
-    }
-}
 }
 
 .navbar-custom{
-    background-color: #E50914;
+    background-color: #0077A1;
     border-radius: 10px;
 
 }
@@ -280,7 +280,7 @@ h3{
 }
 
 .fon{
-    color:#FFFFFF !important;
+    color:#000 !important;
     font-size: 30px;
     font-weight: 1000;
     font-family:'Ubuntu', sans-serif;
@@ -327,9 +327,7 @@ button {
     font-size: 18px;
     color: #FFFFFF;
     text-decoration: none;
-    border-radius: 25px;
-    border-width: 5px;
-    border-color:#E50914 ;
+    border: 6px solid #0077A1;
     transition: background-color 0.3s ease;
 }
 
@@ -347,7 +345,7 @@ button {
     text-decoration: none;
     border-radius: 15px;
     border-width: 3px;
-    border-color:#E50914 ;
+    border-color:#0077A1;
     transition: background-color 0.3s ease;
 }
 
@@ -374,7 +372,7 @@ button {
 }
 
 .skills div span {
-    background: #E50914;
+    background: #0077A1;
     height: 13px;
     float: left;
     margin: 9px;
@@ -400,6 +398,71 @@ button {
     
 }
 
+.coding{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    
+}
+
+.code{
+    width: 280px;
+    color:#f1f1f1;
+    background-color: #0077A1;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+    transition: all 0.4s ease;
+}
+
+.code h4{
+    color: #000;
+    display: block;
+    font-size:25px;
+    font-weight: 650;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.coding .code p{
+    text-align: center;
+}
+
+.code-img{
+    height:auto;
+    width:100px;
+    display: block;
+    margin: 10px auto;
+}
+
+.code-logo{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin:5px auto;
+    transition: all 0.4s ease;
+}
+
+.coding .code:hover{
+    border: 3px solid #0077A1;
+    background: white;
+    transform: scale(1.06);
+    transition: all 0.3s ease;
+}
+
+.coding .code:hover p{
+    color: #0077A1;
+    transition: all 0.3s ease;
+}
+
+.coding .code:hover .code-logo{
+    background: #0077A1;
+    transition: all 0.3s ease;
+}
+
 div[role="progressbar"] {
     color: #FFFFFF;
     margin-bottom: 20px;
@@ -410,7 +473,7 @@ div[role="progressbar"] {
     display: grid;
     --pgPercentage: var(--value);
     background: radial-gradient(closest-side, black 75%, transparent 0 99.9%, black 0),
-        conic-gradient(#E50914 calc(var(--pgPercentage) * 1%), #000000 0);
+        conic-gradient(#0077A1 calc(var(--pgPercentage) * 1%), #000000 0);
 }
 
 .img-container1 {
@@ -437,7 +500,7 @@ div[role="progressbar"] {
 
 @media (max-width:600px) {
     .circle{
-        margin-left: 50px;
+        margin-left: 90px;
     }
 }
 
@@ -465,13 +528,13 @@ div[role="progressbar"] {
 
 @keyframes glow {
     0% {
-        text-shadow: 10 10 30px #E50914;
+        text-shadow: 10 10 30px #0077A1;
     }
     50% {
-        text-shadow: 10 10 40px #E50914; 
+        text-shadow: 10 10 40px #0077A1;
     }
     100% {
-        text-shadow: 10 10 30px #E50914;
+        text-shadow: 10 10 30px #0077A1;
     }
 }
 
@@ -491,8 +554,9 @@ div[role="progressbar"] {
 }
   
 .project .boxes .box {
+    border: 2px solid white;
     margin: 20px 0;
-    background: #E50914;
+    background: #0077A1;
     width: calc(100% / 3 - 50px);
     text-align: center;
     border-radius: 12px;
@@ -505,25 +569,24 @@ div[role="progressbar"] {
 .box .topic p{
     font-size: 30px;
     font-weight: 500;
-    color: #E50914;
+    color: #0077A1;
 }
   
 .box:hover {
     transform: scale(1.06);
     transition: transform 0.3s ease;
-    
 }
 
 .topic{
-    font-size: 20px;
-    font-weight: 800;
+    font-size:20px;
+    font-weight:800;
     color:#000000;
 }
-  
+
 .project .boxes .box:hover {
     background: white;
-    color: #E50914;
-
+    border: 2px solid #0077A1;
+    color: #0077A1;
 }
   
 .project .boxes .box .icon  {
@@ -534,7 +597,7 @@ div[role="progressbar"] {
     text-align: center;
     line-height: 50px;
     font-size: 18px;
-    color: #E50914;
+    color: #0077A1;
     margin: 0 auto 10px auto;
     transition: all 0.4s ease;
 }
@@ -551,7 +614,7 @@ div[role="progressbar"] {
     text-align: center;
     line-height: 40px;
     font-size: 18px;
-    color: #E50914;
+    color: #0077A1;
     margin: 0.9rem;
 }
 
@@ -561,16 +624,16 @@ div[role="progressbar"] {
 }
   
 .boxes .box:hover .box-icon a i {
-    background: #E50914;
+    background: #0077A1;
     color: white;
 }
 
 .box:hover p{
-   color:#E50914
+   color:#0077A1;
 }
 
 .boxes .box:hover .icon {
-    background: #E50914;
+    background: #0077A1;
     color: white;
 }
   
@@ -589,8 +652,6 @@ section .content {
     margin: 40px auto;
 }
     
-
-
 section .title {
     display: flex;
     justify-content: center;
@@ -599,7 +660,7 @@ section .title {
   
   
 section .title span {
-    color: #E50914;
+    color: #0077A1;
     font-size: 30px;
     font-weight: 600;
     position: relative;
@@ -623,7 +684,7 @@ section .title span::after {
     display: flex;
     margin-top: 0.8rem;
     transition: 0.5s ease;
-    background-color: #E50914;
+    background-color: #0077A1;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
@@ -645,7 +706,7 @@ section .title span::after {
 }
 
 .media-icons:hover a{
-    color: #E50914;
+    color: #0077A1;
 }
 
 input,textarea{
@@ -655,7 +716,7 @@ input,textarea{
 
 footer{
     height: 30px;
-    background-color: #E50914;
+    background-color: #0077A1;
     align-items: center;
     justify-content: center;
     padding-bottom: 2px;
