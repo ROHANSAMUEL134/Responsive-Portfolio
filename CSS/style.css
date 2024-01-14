@@ -498,9 +498,9 @@ div[role="progressbar"] {
 
 }
 
-@media (max-width:600px) {
+@media (max-width:750px) {
     .circle{
-        margin-left: 90px;
+        margin: auto;
     }
 }
 
