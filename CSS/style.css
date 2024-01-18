@@ -574,7 +574,7 @@ div[role="progressbar"] {
   
 .box:hover {
     transform: scale(1.06);
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 }
 
 .topic{
@@ -602,32 +602,6 @@ div[role="progressbar"] {
     transition: all 0.4s ease;
 }
   
-.box-icon {
-    margin-top: 1rem;
-}
-  
-.box-icon a i {
-    height: 40px;
-    width: 40px;
-    background: white;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 18px;
-    color: #0077A1;
-    margin: 0.9rem;
-}
-
-.box-icon a i:hover{
-    transform: scale(1.2);
-    transition: 0.2s;
-}
-  
-.boxes .box:hover .box-icon a i {
-    background: #0077A1;
-    color: white;
-}
-
 .box:hover p{
    color:#0077A1;
 }
@@ -635,6 +609,23 @@ div[role="progressbar"] {
 .boxes .box:hover .icon {
     background: #0077A1;
     color: white;
+}
+
+.box-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.box-icon img{
+    height:40px;
+    width:auto;
+    margin: 20px;
+    transition: all 0.4s ease;
+}
+
+.box-icon img:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
 }
   
 .project-img {
@@ -680,33 +671,22 @@ section .title span::after {
     justify-content: center;
 }
 
-.media-icons {
-    display: flex;
-    margin-top: 0.8rem;
-    transition: 0.5s ease;
-    background-color: #0077A1;
+.social{
+    display:flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 50px;
 }
 
-.media-icons a {
-    color:white;
-    font-size: 2rem;
-    transition: 0.4s ease;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.media-icons a:hover {
-    transform: scale(1.3);
+.social img{
+    margin: 20px;
+    width:50px;
+    height:auto;
+    transition: transform 0.4s ease;
 }
 
-.media-icons:hover {
-    background-color: #FFFFFF;
-}
-
-.media-icons:hover a{
-    color: #0077A1;
+.social img:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    
 }
 
 input,textarea{
