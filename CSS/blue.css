@@ -281,7 +281,8 @@ h3{
     }
     #changeTheme{
         font-size: small;
-        max-width: 70px;   
+        max-width: 70px;
+        transform: translateX(-10px);
     }
 }
 
