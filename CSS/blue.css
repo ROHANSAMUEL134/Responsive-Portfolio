@@ -282,7 +282,7 @@ h3{
     #changeTheme{
         font-size: small;
         max-width: 70px;
-        transform: translateX(-10px);
+        transform: translateX(10px);
     }
 }
 
