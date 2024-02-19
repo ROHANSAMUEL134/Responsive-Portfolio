@@ -1,3 +1,18 @@
+
+
+const changeThemebtn=document.getElementById('changeTheme');
+var colorcss=document.getElementById('colorcss')
+const styles=['green','purple','skyblue','militarygreen','red','blue'];
+var index=0;
+var styleslength=styles.length;
+changeThemebtn.addEventListener("click" , function() {
+  var clr=styles[index];
+  colorcss.href='CSS/'+clr+'.css';
+  index+=1
+  if (index == styleslength) {
+    index=0;
+  }
+});
 let nav = document.querySelector("nav");
 let scrollBtn = document.querySelector(".scroll-button a");
 console.log(scrollBtn);
@@ -40,3 +55,6 @@ for (var i = 0; i < navLinks.length; i++) {
     menuBtn.style.pointerEvents = "auto";
   });
 }
+
+
+
