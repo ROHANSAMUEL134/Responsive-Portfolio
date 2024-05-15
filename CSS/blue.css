@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-
 html{
     scroll-behavior: smooth;
 }
@@ -300,15 +299,35 @@ h3{
 }
 
 .hd-txt{
-    color: #000000 !important;
+    color: #fff !important;
     font-family:'Ubuntu', sans-serif;
     font-size: 25px;
     font-weight: 800;
+    position: relative;
 }
 
-.hd-txt:hover{
-    color:#FFFFFF !important;
+.hd-txt::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:#fff;
+    position:absolute;
+    left: 8px;
+    bottom:12px;
+    transition: 0.6s;
 }
+
+.hd-txt:hover::after{ 
+    width: 100px;
+}
+
+@media (max-width:1000px) {
+    .hd-txt::after{
+        left:0px;
+    }
+
+}
+
 
 .fon{
     color:#fff !important;
@@ -463,18 +482,21 @@ button {
 }
 
 .code-img{
+    width:40px;
     height:auto;
-    width:100px;
     display: block;
-    margin: 10px auto;
+    margin: 5px auto;
 }
 
 .code-logo{
-    padding: 10px;
+    padding: 2px;
     background-color: #0077A1;
     border-radius: 50%;
     margin:5px auto;
     transition: all 0.4s ease;
+    background-color: #fff;
+    width: 60px;
+    height:60px;
 }
 
 .coding .code:hover{
@@ -492,6 +514,12 @@ button {
 .coding .code:hover .code-logo{
     background: #0077A1;
     transition: all 0.3s ease;
+}
+
+.prof-img{
+    width: 257px;
+    height: auto;
+    margin: 5px 0px;
 }
 
 div[role="progressbar"] {
@@ -740,7 +768,10 @@ footer{
     background-color: #0077A1;
     align-items: center;
     justify-content: center;
-    padding-bottom: 2px;
     border-radius: 15px;
     text-align: center;
+    position: fixed;
+    bottom:6px;
+    width: 98%;
+    border: 2px solid #fff;
 }
