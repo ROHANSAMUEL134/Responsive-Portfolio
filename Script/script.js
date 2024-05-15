@@ -2,7 +2,7 @@
 
 const changeThemebtn=document.getElementById('changeTheme');
 var colorcss=document.getElementById('colorcss')
-const styles=['green','purple','skyblue','militarygreen','red','blue'];
+const styles=['green','purple','blue'];
 var index=0;
 var styleslength=styles.length;
 changeThemebtn.addEventListener("click" , function() {
