@@ -13,6 +13,21 @@ changeThemebtn.addEventListener("click" , function() {
     index=0;
   }
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  function isMobile() {
+      return window.matchMedia("(max-width: 768px)").matches;
+  }
+
+  const footer = document.getElementById('footer-text')
+
+  if (isMobile()) {
+      const marquee = `<marquee>${footer.innerHTML}</marquee>`;
+      footer.innerHTML = marquee;
+  }
+});
+
 let nav = document.querySelector("nav");
 let scrollBtn = document.querySelector(".scroll-button a");
 console.log(scrollBtn);
