@@ -8,7 +8,7 @@ body {
     font-family:'Ubuntu', sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 10px;
+    padding: 0;
     background-color: #000000 ;
     color:#FFFFFF;
     padding:10px;
@@ -26,20 +26,20 @@ body {
 }
   
 ::-webkit-scrollbar-thumb {
-    background: #A64AC9;
+    background: #0077A1;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
   
 ::-webkit-scrollbar-thumb:hover {
-    background: #A64AC9;
+    background: #0077A1;
 }
 
 .scroll-button a{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    color: #A64AC9;
+    color: #0077A1;
     padding: 7px 12px;
     font-size: 30px;
     border-radius: 15px;
@@ -79,7 +79,7 @@ body {
 
 header {
     position: fixed;
-    background-color:#A64AC9;
+    background-color:#0077A1;
     font-family:'Poppins', sans-serif;
     border: 2px solid white;
     border-radius: 15px;
@@ -90,7 +90,7 @@ header {
 }
 
 h2 {
-    color:#A64AC9;
+    color:#0077A1;
     font-family:'Ubuntu', sans-serif;
     font-size: 30px;
     text-align: center;
@@ -99,7 +99,7 @@ h2 {
 }
 
 h3{
-    color:#A64AC9;
+    color:#0077A1;
     font-family:'Ubuntu', sans-serif;
 }
 
@@ -198,12 +198,12 @@ h3{
 
 .designation1{
     color:rgba(0,0,0,0);
-    -webkit-text-stroke: 0.1vw #A64AC9;
+    -webkit-text-stroke: 0.1vw #0077A1;
 }
 
 .designation2{
     color:rgba(0,0,0,0);
-    -webkit-text-stroke: 0.1vw #A64AC9;
+    -webkit-text-stroke: 0.1vw #0077A1;
 } 
 
 .designation1::before{
@@ -212,8 +212,8 @@ h3{
     left:20;
     width:0%;
     height:100%;
-    color:#A64AC9;
-    -webkit-text-stroke: 0.1vw #A64AC9;
+    color:#0077A1;
+    -webkit-text-stroke: 0.1vw #0077A1;
     overflow: hidden;
     animation: desig1 5s linear infinite;
 }
@@ -236,8 +236,8 @@ h3{
     left:20;
     width:0%;
     height:100%;
-    color:#A64AC9;
-    -webkit-text-stroke: 0.1vw #A64AC9;
+    color:#0077A1;
+    -webkit-text-stroke: 0.1vw #0077A1;
     overflow: hidden;
     animation: desig2 5s linear infinite;
 }
@@ -288,7 +288,7 @@ h3{
 }
 
 .navbar-custom{
-    background-color: #A64AC9;
+    background-color: #0077A1;
     border-radius: 10px;
 
 }
@@ -377,7 +377,7 @@ button {
     font-size: 18px;
     color: #FFFFFF;
     text-decoration: none;
-    border: 6px solid #A64AC9;
+    border: 6px solid #0077A1;
     transition: background-color 0.3s ease;
 }
 
@@ -395,7 +395,7 @@ button {
     text-decoration: none;
     border-radius: 15px;
     border-width: 3px;
-    border-color:#A64AC9;
+    border-color:#0077A1;
     transition: background-color 0.3s ease;
 }
 
@@ -422,7 +422,7 @@ button {
 }
 
 .skills div span {
-    background: #A64AC9;
+    background: #0077A1;
     height: 13px;
     float: left;
     margin: 9px;
@@ -450,7 +450,7 @@ button {
 
 .coding{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     flex-grow: 1;
     
@@ -459,7 +459,7 @@ button {
 .code{
     width: 300px;
     color:#f1f1f1;
-    background-color: #A64AC9;
+    background-color: #0077A1;
     border: 2px solid white;
     border-radius: 10px;
     padding: 10px;
@@ -490,7 +490,7 @@ button {
 
 .code-logo{
     padding: 2px;
-    background-color: #A64AC9;
+    background-color: #0077A1;
     border-radius: 50%;
     margin:5px auto;
     transition: all 0.4s ease;
@@ -500,24 +500,24 @@ button {
 }
 
 .coding .code:hover{
-    border: 3px solid #A64AC9;
+    border: 3px solid #0077A1;
     background: white;
     transform: scale(1.06);
     transition: all 0.3s ease;
 }
 
 .coding .code:hover p{
-    color: #A64AC9;
+    color: #0077A1;
     transition: all 0.3s ease;
 }
 
 .coding .code:hover .code-logo{
-    background: #A64AC9;
+    background: #0077A1;
     transition: all 0.3s ease;
 }
 
 .prof-img{
-    width: 277px;
+    width: 257px;
     height: auto;
     margin: 5px 0px;
 }
@@ -532,7 +532,7 @@ div[role="progressbar"] {
     display: grid;
     --pgPercentage: var(--value);
     background: radial-gradient(closest-side, black 75%, transparent 0 99.9%, black 0),
-        conic-gradient(#A64AC9 calc(var(--pgPercentage) * 1%), #000000 0);
+        conic-gradient(#0077A1 calc(var(--pgPercentage) * 1%), #000000 0);
 }
 
 .img-container1 {
@@ -590,13 +590,13 @@ div[role="progressbar"] {
 
 @keyframes glow {
     0% {
-        text-shadow: 10 10 30px #A64AC9;
+        text-shadow: 10 10 30px #0077A1;
     }
     50% {
-        text-shadow: 10 10 40px #A64AC9;
+        text-shadow: 10 10 40px #0077A1;
     }
     100% {
-        text-shadow: 10 10 30px #A64AC9;
+        text-shadow: 10 10 30px #0077A1;
     }
 }
 
@@ -618,7 +618,7 @@ div[role="progressbar"] {
 .project .boxes .box {
     border: 2px solid white;
     margin: 20px auto;
-    background: #A64AC9;
+    background: #0077A1;
     text-align: center;
     border-radius: 12px;
     padding: 30px 10px;
@@ -630,7 +630,7 @@ div[role="progressbar"] {
 .box .topic p{
     font-size: 30px;
     font-weight: 500;
-    color: #A64AC9;
+    color: #0077A1;
 }
   
 .box:hover {
@@ -646,8 +646,8 @@ div[role="progressbar"] {
 
 .project .boxes .box:hover {
     background: white;
-    border: 2px solid #A64AC9;
-    color: #A64AC9;
+    border: 2px solid #0077A1;
+    color: #0077A1;
 }
   
 .project .boxes .box .icon  {
@@ -658,17 +658,17 @@ div[role="progressbar"] {
     text-align: center;
     line-height: 50px;
     font-size: 18px;
-    color: #A64AC9;
+    color: #0077A1;
     margin: 0 auto 10px auto;
     transition: all 0.4s ease;
 }
   
 .box:hover p{
-   color:#A64AC9;
+   color:#0077A1;
 }
 
 .boxes .box:hover .icon {
-    background: #A64AC9;
+    background: #0077A1;
     color: white;
 }
 
@@ -722,7 +722,7 @@ section .title {
   
   
 section .title span {
-    color: #A64AC9;
+    color: #0077A1;
     font-size: 30px;
     font-weight: 600;
     position: relative;
