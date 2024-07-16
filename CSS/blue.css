@@ -8,7 +8,7 @@ body {
     font-family:'Ubuntu', sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 10px;
+    padding: 0;
     background-color: #000000 ;
     color:#FFFFFF;
     padding:10px;
@@ -450,14 +450,14 @@ button {
 
 .coding{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     flex-grow: 1;
     
 }
 
 .code{
-    width: 300px;
+    width: 280px;
     color:#f1f1f1;
     background-color: #0077A1;
     border: 2px solid white;
@@ -517,7 +517,7 @@ button {
 }
 
 .prof-img{
-    width: 277px;
+    width: 257px;
     height: auto;
     margin: 5px 0px;
 }
