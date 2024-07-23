@@ -323,7 +323,6 @@ h3{
     .hd-txt::after{
         left:0px;
     }
-
 }
 
 .fon{
@@ -448,14 +447,12 @@ button {
 
 .coding{
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    flex-grow: 1;
-    
+    justify-content: space-between;
 }
 
 .code{
-    width: 300px;
+    width:300px;
     color:#f1f1f1;
     background-color: #A64AC9;
     border: 2px solid white;
@@ -465,14 +462,18 @@ button {
     transition: all 0.4s ease;
 }
 
+@media (max-width:920px) {
+    .coding{
+        justify-content: center;
+    }
+}
+
 .code h4{
     color: #000;
     display: block;
     font-size:25px;
     font-weight: 650;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
 }
 
 .coding .code p{
@@ -611,6 +612,7 @@ div[role="progressbar"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-grow:1;
 }
   
 .project .boxes .box {
