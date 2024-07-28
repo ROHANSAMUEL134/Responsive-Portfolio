@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
@@ -37,13 +38,14 @@ body {
 
 .scroll-button a{
     position: fixed;
-    bottom: 20px;
+    bottom: 40px;
     right: 20px;
-    color: #0077A1;
+    color: white;
     padding: 7px 12px;
     font-size: 30px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.15);
+    z-index: 999;
 }
   
 #video-background {
@@ -333,16 +335,33 @@ h3{
 }
 
 .navbar-toggler{
-    border: 3px solid black !important; 
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    transition: 0.3s ease-in-out;
-} 
+    border: none;
+}
 
-.navbar-toggler:hover{
-    transform: scale(1.2);
-} 
+.navbar-toggler:focus {
+    outline: none; 
+}
 
+.hamburger-toggler-icon .bar {
+    width: 35px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.hamburger-toggler-icon.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+}
+
+.hamburger-toggler-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-toggler-icon.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
+}
 
 section{
     margin-top:10px ;
@@ -378,7 +397,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-#submit:hover,button:hover {
+#submit:hover {
     color:#000000;
     background-color: #FFFFFF;
 }
