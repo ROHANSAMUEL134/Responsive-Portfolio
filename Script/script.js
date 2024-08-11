@@ -1,3 +1,4 @@
+//Hamburger navbar icon
 document.addEventListener("DOMContentLoaded", () => {
   const hamburgerBtn = document.getElementById("hamburger-btn");
   const hamburgerToggler = document.getElementById("hamburger-icon");
@@ -8,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });    
 });
 
+//Theme change
 const changeThemebtn=document.getElementById('changeTheme');
 var colorcss=document.getElementById('colorcss')
 const styles=['green','purple','blue'];
@@ -22,19 +24,19 @@ changeThemebtn.addEventListener("click" , function() {
   }
 });
 
+//Making footer marquee in mobile view
 document.addEventListener("DOMContentLoaded", function() {
   function isMobile() {
       return window.matchMedia("(max-width: 768px)").matches;
   }
-
   const footer = document.getElementById('footer-text')
-
   if (isMobile()) {
       const marquee = `<marquee>${footer.innerHTML}</marquee>`;
       footer.innerHTML = marquee;
   }
 });
 
+//Hiding and displaying reach-top arrow
 let nav = document.querySelector("nav");
 let scrollBtn = document.querySelector(".scroll-button a");
 console.log(scrollBtn);
