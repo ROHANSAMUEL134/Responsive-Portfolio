@@ -614,7 +614,8 @@ button {
 @media (max-width: 500px){
     .skills{
         height: fit-content;
-        width: 95%
+        width: 95%;
+        margin: 20px auto;
     }
 }
 
