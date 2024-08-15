@@ -9,10 +9,9 @@ body {
     font-family:'Ubuntu', sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding: 10px 0px;
     background-color: #000000 ;
     color:#FFFFFF;
-    padding:10px;
     box-sizing: border-box;
     scroll-behavior: smooth;
     user-select: none;
@@ -612,6 +611,13 @@ button {
     padding: 15px;
 }
 
+@media (max-width: 500px){
+    .skills{
+        height: fit-content;
+        width: 95%
+    }
+}
+
 .skills:hover {
     box-shadow: 0px 0px 20px white;
 }
@@ -750,7 +756,7 @@ button {
     padding: 5px 10px;
     background-color: #fff;
     border-radius: 5px;
-    margin: auto 5px;
+    margin: 5px;
 }
 
 .txt2 .tech-title{
@@ -761,6 +767,7 @@ button {
 .tech-stack{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 section .content {
