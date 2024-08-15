@@ -83,15 +83,18 @@ body {
     outline: none;
 }
 
+.header-container{
+    display: flex;
+    justify-content: center;
+}
+
 header {
     position: fixed;
     background-color:#096943;
     font-family:'Poppins', sans-serif;
     border: 2px solid white;
     border-radius: 15px;
-    margin:7px;
-    margin-top: -10px;
-    width: 98%;
+    width: 95%;
     z-index: 999;
 }
 
@@ -423,51 +426,6 @@ button {
     background-color: #000000;
 }
 
-.skill {
-    font-size: 17px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.skill span {
-    margin-left: 10px;
-    float: right;
-   
-}
-
-.skill div {
-    width: 95%;
-    
-    border-radius: 10px;
-}
-
-.skills div span {
-    background: #096943;
-    height: 13px;
-    float: left;
-    margin: 9px;
-}
-
-.skil{
-    display: flex;
-    flex-direction: column;
-}
-
-.skil span{
-    margin:1.5px;
-}
-
-.skils{
-    padding:1.5px;
-}
-
-.circle-skill{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-
 .coding{
     display: flex;
     flex-wrap: wrap;
@@ -485,6 +443,10 @@ button {
     transition: all 0.4s ease;
 }
 
+.code a{
+    text-decoration: none;
+}
+
 @media (max-width:920px) {
     .coding{
         justify-content: center;
@@ -492,15 +454,23 @@ button {
 }
 
 .code h4{
-    color: #000;
+    color: #fff;
     display: block;
-    font-size:25px;
-    font-weight: 650;
+    font-size:20px;
+    font-weight: 600;
     text-align: center;
 }
 
-.coding .code p{
-    text-align: center;
+.coding .code center p{
+    background-color: #fff;
+    width:fit-content;
+    color: #096943;
+    padding:5px 10px;
+    border-radius: 5px;
+}
+
+.coding .code center{
+    padding-top: 15px;
 }
 
 .code-img{
@@ -525,36 +495,30 @@ button {
     border: 3px solid #096943;
     background: white;
     transform: scale(1.06);
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .coding .code:hover p{
-    color: #096943;
-    transition: all 0.3s ease;
+    color: white;
+    background-color: #096943;
 }
 
 .coding .code:hover .code-logo{
     background: #096943;
-    transition: all 0.3s ease;
+}
+
+.coding .code:hover .prof-img{
+    border: 2px solid #096943;
+}
+
+.coding .code:hover .platform{
+    color: #096943;
 }
 
 .prof-img{
-    width: 277px;
+    width: 275px;
     height: auto;
     margin: 5px 0px;
-}
-
-div[role="progressbar"] {
-    color: #FFFFFF;
-    margin-bottom: 20px;
-    width: 100px;
-    height: 100px;
-    border-radius:50%;
-    place-items: center;
-    display: grid;
-    --pgPercentage: var(--value);
-    background: radial-gradient(closest-side, black 75%, transparent 0 99.9%, black 0),
-        conic-gradient(#096943 calc(var(--pgPercentage) * 1%), #000000 0);
 }
 
 .img-container1 {
@@ -609,7 +573,6 @@ div[role="progressbar"] {
     font-weight: 900;
 }
 
-
 @keyframes glow {
     0% {
         text-shadow: 10 10 30px #096943;
@@ -631,6 +594,56 @@ div[role="progressbar"] {
     margin-left: 25px;
 }
 
+.skillset{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.skills{
+    border: 2px solid #096943;
+    border-radius: 20px;
+    height: 230px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.skills:hover {
+    box-shadow: 0px 0px 20px white;
+}
+
+.skill{
+    background-color: #096943;
+    display: flex;
+    border-radius: 15px;
+    height: 45px;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.skill:hover{
+    transform: scale(1.1);
+}
+
+.skill img{
+    height: 25px;
+    margin-right: 15px;
+}
+
+.skill p{
+    transform: translateY(-3px);
+}
+
+.skillset-topic{
+    font-size: 25px;
+    text-align: center;
+}
+
 .project .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -647,7 +660,7 @@ div[role="progressbar"] {
     padding: 30px 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
     cursor: pointer;
-    transition: all 0.4s ease;
+    transition: transform 0.4s ease;
 }
   
 .box .topic p{
@@ -655,19 +668,15 @@ div[role="progressbar"] {
     font-weight: 500;
     color: #096943;
 }
-  
-.box:hover {
-    transform: scale(1.06);
-    transition: transform 0.4s ease;
-}
 
 .topic{
     font-size:20px;
     font-weight:800;
-    color:#000000;
+    color:#fff;
 }
 
 .project .boxes .box:hover {
+    transform: scale(1.06);
     background: white;
     border: 2px solid #096943;
     color: #096943;
@@ -695,6 +704,15 @@ div[role="progressbar"] {
     color: white;
 }
 
+.boxes .box:hover .tools{
+    color: white;
+    background-color: #096943;
+}
+
+.project .boxes .box:hover .topic{
+    color:#096943;
+}
+
 .box-icon{
     display: flex;
     justify-content: center;
@@ -717,7 +735,6 @@ div[role="progressbar"] {
     height: auto; 
     margin-bottom:20px;
     transition : transform 0.3s linear;
-    
 }
 
 .project-img:hover {
@@ -728,8 +745,22 @@ div[role="progressbar"] {
     overflow: hidden;
 }
 
-.txt2 span{
-    font-weight: 1000;
+.tools{
+    color: #096943;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: auto 5px;
+}
+
+.txt2 .tech-title{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.tech-stack{
+    display: flex;
+    justify-content: center;
 }
 
 section .content {
@@ -742,8 +773,7 @@ section .title {
     justify-content: center;
     margin-bottom: 60px;
 }
-  
-  
+
 section .title span {
     color: #096943;
     font-size: 30px;
@@ -751,7 +781,6 @@ section .title span {
     position: relative;
     padding-bottom: 8px;
 }
-  
   
 section .title span::after {
     bottom: -7px;
@@ -780,12 +809,16 @@ section .title span::after {
 .social img:hover{
     transform: scale(1.2);
     transition: 0.3s;
-    
 }
 
 input,textarea{
     border-color: #000000;
     border-radius: 7px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
 }
 
 footer{
@@ -797,6 +830,6 @@ footer{
     text-align: center;
     position: fixed;
     bottom:6px;
-    width: 98%;
+    width: 95%;
     border: 2px solid #fff;
 }
