@@ -824,6 +824,16 @@ input,textarea{
     border-radius: 7px;
 }
 
+form .contact-inputs{
+    width: 350px;
+}
+
+@media(max-width:500px){
+    form .contact-inputs{
+        width: 300px;
+    }
+}
+
 .footer-container{
     display: flex;
     justify-content: center;
