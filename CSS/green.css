@@ -9,7 +9,7 @@ body {
     font-family:'Ubuntu', sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 10px 0px;
+    padding: 10px;
     background-color: #000000 ;
     color:#FFFFFF;
     box-sizing: border-box;
@@ -61,7 +61,7 @@ body {
 .themeDiv{
     display:flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #changeTheme{
@@ -822,6 +822,16 @@ section .title span::after {
 input,textarea{
     border-color: #000000;
     border-radius: 7px;
+}
+
+form .contact-inputs{
+    width: 350px;
+}
+
+@media(max-width:500px){
+    form .contact-inputs{
+        width: 300px;
+    }
 }
 
 .footer-container{
