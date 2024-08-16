@@ -425,6 +425,72 @@ button {
     background-color: #000000;
 }
 
+.achievement-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0077A1;
+    padding: 5px 0px 40px 0px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 60%;
+    transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width:768px){
+    .achievements{
+        width: 80%;
+    }
+}
+
+.achievements i{
+    font-size: 25px;
+    color:#0077A1;
+    background-color: #fff;
+    padding:10px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.achievements img{
+    width: 85%;
+}
+
+.achievements  p{
+    width: 85%;
+    text-align: justify;
+}
+
+.achievements a .drive{
+    width: 60px; 
+    transition: all 0.3s ease-in-out;
+}
+
+.achievements a .drive:hover{
+    transform: scale(1.2);
+}
+
+.achievements:hover{
+    background-color: #fff;
+    transform: scale(1.05);
+    border-color: #0077A1;
+}
+
+.achievements:hover p{
+    color: #0077A1;
+}
+
+.achievements:hover i{
+    color: white;
+    background-color: #0077A1;
+}
+
 .coding{
     display: flex;
     flex-wrap: wrap;
