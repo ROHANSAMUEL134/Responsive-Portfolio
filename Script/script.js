@@ -51,3 +51,21 @@ window.onscroll = function() {
   }
 }
 
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+  var recipientEmail = "rohansamuel134@gmail.com";
+
+  if (name && email && message) {
+      var mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(name)} (${encodeURIComponent(email)}): ${encodeURIComponent(message)}`;
+      
+      window.location.href = mailtoLink;
+    
+      document.getElementById("contactForm").reset();
+  } 
+});

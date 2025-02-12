@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -249,8 +250,8 @@
                             <img src="Coding Platforms/Profiles/LeetCode.png" class="prof-img">
                             <center>
                                 <p>⭐⭐⭐</p>
-                                <p>920+ Problems Solved!</p>
-                                <p>400+ Streak</p>
+                                <p>1000+ Problems Solved!</p>
+                                <p>450+ Streak</p>
                             </center>
                         </a>
                     </div>
@@ -265,7 +266,7 @@
                             <center>
                                 <p>⭐⭐⭐⭐⭐⭐</p>
                                 <p>Top 0.04% in ProjectEuler+</p>
-                                <p>400+ Streak</p>
+                                <p>450+ Streak</p>
                             </center>
                         </a>
                     </div>
@@ -279,7 +280,7 @@
                             <center>
                                 <p>⭐⭐⭐</p>
                                 <p>Highest Rating - 1611</p>
-                                <p>400+ Streak</p>
+                                <p>450+ Streak</p>
                             </center>
                         </a>
                     </div>
@@ -293,8 +294,8 @@
                             <img src="Coding Platforms/Profiles/GFG.png" class="prof-img">
                             <center>
                                 <p>University Rank 1🥇</p> 
-                                <p>820+ Problems Solved!</p>
-                                <p>400+ Streak</p>
+                                <p>950+ Problems Solved!</p>
+                                <p>450+ Streak</p>
                             </center>
                         </a> 
                     </div>
@@ -308,8 +309,8 @@
                             <img src="Coding Platforms/Profiles/CodingNinjas.png" class="prof-img">
                             <center>
                                 <p>Level 8 - Specialist!🎖️</p>
-                                <p>College Topper 9 Times!</p>
-                                <p>400+ Streak</p>
+                                <p>College Topper 10 Times!</p>
+                                <p>450+ Streak</p>
                             </center>                            
                         </a>
                     </div>
@@ -324,7 +325,7 @@
                             <center>
                                 <p>Max Rating 891 📈</p>
                                 <p>NewBie</p>
-                                <p>140+ Streak</p>
+                                <p>200+ Streak</p>
                             </center>
                         </a>
                     </div>
@@ -638,13 +639,15 @@
       <section id="contact">
             <h2>Contact Me</h2>
             <div class="contact">
-            <form name="form">
-                Name:<br><input class="contact-inputs" type="text" name="Name" placeholder="Enter Your Name:" required><br> <br>          
-                Description:<br><textarea class="contact-inputs" rows="5" col="7" name="txt" placeholder="Type Something..."></textarea>
-                <br><button id="submit" type="submit" value="Submit">Submit</button>
-            </form>
-          </div>
-          <br><br>
+                <form name="form" id = "contact-form">
+                    Name: <br> <input class="contact-inputs" type="text" id ="name" name="Name" placeholder="Enter Your Name:" required><br> <br>          
+                    Email: <br> <input class="contact-inputs" type="email" id="email" name="Email" placeholder="Enter Your Email:" required><br> <br>
+                    Subject: <br> <input class="contact-inputs" type="text" id="subject" name="Subject" placeholder="Enter the subject:" required><br> <br>
+                    Description: <br><textarea class="contact-inputs" rows="5" col="7" id="message" name="txt" placeholder="Type Something..." required></textarea>
+                    <br><button id="submit" type="submit" value="Submit">Submit</button>
+                </form>
+            </div>
+            <br><br>
                 <p style="text-align:center;">
             Thank you for visiting my portfolio. If you would like to get in touch, you can reach me at :
             </p>
@@ -664,7 +667,7 @@
     </main><br><br>
     <div class="footer-container">
         <footer>
-        <p id="footer-text">&copy; 2024 All rights reserved by Rohan Samuel J. </p>
+        <p id="footer-text">&copy; 2025 All rights reserved by Rohan Samuel J. </p>
         </footer>
     </div>
   </div>
