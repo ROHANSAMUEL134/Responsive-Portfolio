@@ -26,13 +26,13 @@ body {
 }
   
 ::-webkit-scrollbar-thumb {
-    background: #CA43FF;
+    background: #830294;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
   
 ::-webkit-scrollbar-thumb:hover {
-    background: #CA43FF;
+    background: #830294;
 }
 
 .scroll-button a{
@@ -89,7 +89,7 @@ body {
 
 header {
     position: fixed;
-    background-color:#CA43FF;
+    background-color:#830294;
     font-family:'Poppins', sans-serif;
     border: 2px solid white;
     border-radius: 15px;
@@ -98,7 +98,7 @@ header {
 }
 
 h2 {
-    color:#CA43FF;
+    color:#830294;
     font-family:'Ubuntu', sans-serif;
     font-size: 30px;
     text-align: center;
@@ -107,7 +107,7 @@ h2 {
 }
 
 h3{
-    color:#CA43FF;
+    color:#830294;
     font-family:'Ubuntu', sans-serif;
 }
 
@@ -122,169 +122,118 @@ h3{
     {
         transform:perspective(1000px) rotateY(0deg);
     }
-    5%
+    4%
     {
         transform:perspective(500px) rotateY(25deg);
     }
-    10%
+    8%
     {
         transform:perspective(1000px) rotateY(0deg);
     }
-    15%
+    12%
     {
         transform:perspective(500px) rotateY(-25deg);
     }
-    20%
+    16%
     {
         transform:perspective(1000px) rotateY(0deg);
     }
-    25%
+    20%
     {
         transform:perspective(300px) rotateY(360deg);
     }
-    30%
+    24%
     {
         transform:perspective(1000px) rotateY(0deg);
     }
-    35%
+    28%
     {
         transform:perspective(500px) rotateY(25deg);
+    }
+    32%
+    {
+        transform:perspective(1000px) rotateY(0deg);
+    }
+    36%
+    {
+        transform:perspective(500px) rotateY(-25deg);
     }
     40%
     {
         transform:perspective(1000px) rotateY(0deg);
     }
-    45%
-    {
-        transform:perspective(500px) rotateY(-25deg);
-    }
-    50%
-    {
-        transform:perspective(1000px) rotateY(0deg);
-    }
-    55%
+    44%
     {
         transform:perspective(300px) rotateX(360deg);
     }
-    60%
+    48%
     {
         transform:perspective(1000px) rotateY(0deg);
     }
-    65%
+    52%
     {
         transform:perspective(500px) rotateY(25deg);
     }
-    70%
+    56%
     {
         transform:perspective(1000px) rotateY(0deg);
     }
-    75%
+    60%
     {
         transform:perspective(500px) rotateY(-25deg);
+    }
+    64%
+    {
+        transform:perspective(1000px) rotateY(0deg);
+    }
+    68%
+    {
+        transform:perspective(300px) rotateY(360deg);
+    }
+    72%
+    {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    76%
+    {
+        transform: perspective(500px) rotateY(25deg);
     }
     80%
     {
         transform:perspective(1000px) rotateY(0deg);
     }
-    85%
+    84%
     {
-        transform: perspective(300px) rotateZ(360deg);
+        transform:perspective(500px) rotateY(-25deg);
     }
-    90%
+    88%
     {
         transform: perspective(1000px) rotateY(0deg);
     }
-    95%
+    92%
     {
-        transform: perspective(500px) rotateY(-25deg);
+        transform:perspective(300px) rotateX(360deg);
     }
-    100%
+    96%
     {
-        transform:perspective(1000px) rotateY(0deg);
+        transform: perspective(1000px) rotateY(0deg);
     }
 }
 
 .designation1{
     color:rgba(0,0,0,0);
-    -webkit-text-stroke: 0.1vw #CA43FF;
+    width: 100%;
+    -webkit-text-stroke: 3px #830294;
 }
 
-.designation2{
-    color:rgba(0,0,0,0);
-    -webkit-text-stroke: 0.1vw #CA43FF;
-} 
-
-.designation1::before{
-    content:attr(data-text);
-    position:absolute;
-    left:20;
-    width:0%;
-    height:100%;
-    color:#CA43FF;
-    -webkit-text-stroke: 0.1vw #CA43FF;
-    overflow: hidden;
-    animation: desig1 5s linear infinite;
+#zoho-logo{
+    width: auto;
+    height: 80px;
+    margin-left: 5vw;
 }
 
-@keyframes desig1
-{
-    0%,10%,100%
-    {
-        width:0%
-    }
-    70%,90%
-    {
-        width:57%;
-    }
-}
-
-.designation2::before{
-    content:attr(data-text);
-    position:absolute;
-    left:20;
-    width:0%;
-    height:100%;
-    color:#CA43FF;
-    -webkit-text-stroke: 0.1vw #CA43FF;
-    overflow: hidden;
-    animation: desig2 5s linear infinite;
-}
-
-@keyframes desig2
-{
-    0%,10%,100%
-    {
-        width:0%
-    }
-    70%,90%
-    {
-        width:61%;
-    }
-}
 
 @media (max-width:600px) {
-    @keyframes desig1
-    {
-        0%,10%,100%
-        {
-            width:0%
-        }
-        70%,90%
-        {
-            width:85%;
-        }
-    }
-    @keyframes desig2
-    {
-        0%,10%,100%
-        {
-            width:0%
-        }
-        70%,90%
-        {
-            width:90%;
-        }
-    }
     .abt{
         transform: translateX(40px);
     }
@@ -296,7 +245,7 @@ h3{
 }
 
 .navbar-custom{
-    background-color: #CA43FF;
+    background-color: #830294;
     border-radius: 10px;
 }
 
@@ -399,7 +348,7 @@ button {
     font-size: 18px;
     color: #FFFFFF;
     text-decoration: none;
-    border: 6px solid #CA43FF;
+    border: 6px solid #830294;
     transition: background-color 0.3s ease;
 }
 
@@ -417,7 +366,7 @@ button {
     text-decoration: none;
     border-radius: 15px;
     border-width: 3px;
-    border-color:#CA43FF;
+    border-color:#830294;
     transition: background-color 0.3s ease;
 }
 
@@ -435,7 +384,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #CA43FF;
+    background-color: #830294;
     padding: 5px 0px 40px 0px;
     border: 2px solid white;
     border-radius: 10px;
@@ -451,7 +400,7 @@ button {
 
 .achievements i{
     font-size: 25px;
-    color:#CA43FF;
+    color:#830294;
     background-color: #fff;
     padding:10px;
     border-radius: 50%;
@@ -479,16 +428,16 @@ button {
 .achievements:hover{
     background-color: #fff;
     transform: scale(1.05);
-    border-color: #CA43FF;
+    border-color: #830294;
 }
 
 .achievements:hover p{
-    color: #CA43FF;
+    color: #830294;
 }
 
 .achievements:hover i{
     color: white;
-    background-color: #CA43FF;
+    background-color: #830294;
 }
 
 .coding{
@@ -500,7 +449,7 @@ button {
 .code{
     width:300px;
     color:#f1f1f1;
-    background-color: #CA43FF;
+    background-color: #830294;
     border: 2px solid white;
     border-radius: 10px;
     padding: 10px;
@@ -529,7 +478,7 @@ button {
 .coding .code center p{
     background-color: #fff;
     width:fit-content;
-    color: #CA43FF;
+    color: #830294;
     padding:5px 10px;
     border-radius: 5px;
 }
@@ -547,7 +496,7 @@ button {
 
 .code-logo{
     padding: 2px;
-    background-color: #CA43FF;
+    background-color: #830294;
     border-radius: 50%;
     margin:5px auto;
     transition: all 0.4s ease;
@@ -557,7 +506,7 @@ button {
 }
 
 .coding .code:hover{
-    border: 3px solid #CA43FF;
+    border: 3px solid #830294;
     background: white;
     transform: scale(1.06);
     transition: transform 0.3s ease;
@@ -565,19 +514,19 @@ button {
 
 .coding .code:hover p{
     color: white;
-    background-color: #CA43FF;
+    background-color: #830294;
 }
 
 .coding .code:hover .code-logo{
-    background: #CA43FF;
+    background: #830294;
 }
 
 .coding .code:hover .prof-img{
-    border: 2px solid #CA43FF;
+    border: 2px solid #830294;
 }
 
 .coding .code:hover .platform{
-    color: #CA43FF;
+    color: #830294;
 }
 
 .prof-img{
@@ -640,13 +589,13 @@ button {
 
 @keyframes glow {
     0% {
-        text-shadow: 10 10 30px #CA43FF;
+        text-shadow: 10 10 30px #830294;
     }
     50% {
-        text-shadow: 10 10 40px #CA43FF;
+        text-shadow: 10 10 40px #830294;
     }
     100% {
-        text-shadow: 10 10 30px #CA43FF;
+        text-shadow: 10 10 30px #830294;
     }
 }
 
@@ -666,7 +615,7 @@ button {
 }
 
 .skills{
-    border: 2px solid #CA43FF;
+    border: 2px solid #830294;
     border-radius: 20px;
     height: 230px;
     margin: 20px;
@@ -690,7 +639,7 @@ button {
 }
 
 .skill{
-    background-color: #CA43FF;
+    background-color: #830294;
     display: flex;
     border-radius: 15px;
     height: 45px;
@@ -727,7 +676,7 @@ button {
 .project .boxes .box {
     border: 2px solid white;
     margin: 20px auto;
-    background: #CA43FF;
+    background: #830294;
     text-align: center;
     border-radius: 12px;
     padding: 30px 10px;
@@ -739,7 +688,7 @@ button {
 .box .topic p{
     font-size: 30px;
     font-weight: 500;
-    color: #CA43FF;
+    color: #830294;
 }
 
 .topic{
@@ -751,8 +700,8 @@ button {
 .project .boxes .box:hover {
     transform: scale(1.06);
     background: white;
-    border: 2px solid #CA43FF;
-    color: #CA43FF;
+    border: 2px solid #830294;
+    color: #830294;
 }
   
 .project .boxes .box .icon  {
@@ -763,27 +712,27 @@ button {
     text-align: center;
     line-height: 50px;
     font-size: 18px;
-    color: #CA43FF;
+    color: #830294;
     margin: 0 auto 10px auto;
     transition: all 0.4s ease;
 }
   
 .box:hover p{
-   color:#CA43FF;
+   color:#830294;
 }
 
 .boxes .box:hover .icon {
-    background: #CA43FF;
+    background: #830294;
     color: white;
 }
 
 .boxes .box:hover .tools{
     color: white;
-    background-color: #CA43FF;
+    background-color: #830294;
 }
 
 .project .boxes .box:hover .topic{
-    color:#CA43FF;
+    color:#830294;
 }
 
 .box-icon{
@@ -819,7 +768,7 @@ button {
 }
 
 .tools{
-    color: #CA43FF;
+    color: #830294;
     padding: 5px 10px;
     background-color: #fff;
     border-radius: 5px;
@@ -849,7 +798,7 @@ section .title {
 }
 
 section .title span {
-    color: #CA43FF;
+    color: #830294;
     font-size: 30px;
     font-weight: 600;
     position: relative;
@@ -907,7 +856,7 @@ form .contact-inputs{
 
 footer{
     height: 35px;
-    background-color: #CA43FF;
+    background-color: #830294;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
