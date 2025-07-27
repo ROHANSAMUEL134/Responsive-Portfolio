@@ -223,7 +223,7 @@ h3{
 .designation1{
     color:rgba(0,0,0,0);
     width: 100%;
-    -webkit-text-stroke: 0.3px #0077A1;
+    -webkit-text-stroke: 3px #0077A1;
 }
 
 #zoho-logo{
