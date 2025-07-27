@@ -223,33 +223,7 @@ h3{
 .designation1{
     color:rgba(0,0,0,0);
     width: 100%;
-    -webkit-text-stroke: 0.1vw #0077A1;
-}
-
-.designation1::before{
-    content:attr(data-text);
-    white-space: nowrap;
-    position:absolute;
-    left:20;
-    width:fit-content;
-    height:auto;
-    color:#0077A1;
-    -webkit-text-stroke: 0vw #0077A1;
-    overflow: hidden;
-    border-right: 2px solid aliceblue;
-    animation: desig1 5s linear infinite;
-}
-
-@keyframes desig1
-{
-    0%,10%,100%
-    {
-        width:0%
-    }
-    70%,90%
-    {
-        width:70%;
-    }
+    -webkit-text-stroke: 0.3vw #0077A1;
 }
 
 #zoho-logo{
@@ -260,17 +234,6 @@ h3{
 
 
 @media (max-width:600px) {
-    @keyframes desig1
-    {
-        0%,10%,100%
-        {
-            width:0%
-        }
-        70%,90%
-        {
-            width:85%;
-        }
-    }
     .abt{
         transform: translateX(40px);
     }
