@@ -15,18 +15,20 @@
     <link rel="icon" href="Images/profile.jpg" type="image/x-icon">
     <style>
         .visitors-followers {      
-            transform: scale(0.75);
-            position: absolute;
-            top: 100px;
-            left: 1vh;
+            transform: scale(0.75) translateX(-100px);
         }
-
+        
         @media (min-width: 1024px) {
             .visitors-followers {
                 transform: scale(1); 
-                left: 70px;
+            } 
+            main{
+                transform: translateY(-70px);
             }
-            
+            .vfc{
+                margin: 35px 100px 0px 100px;
+            }
+    
         }
     </style>
 </head>
@@ -86,24 +88,23 @@
     <section id="top"></section>
     <br><br><br>
 
+    <div class = "vfc" style = "display: flex; justify-content: space-between; margin: 35px 100px 0px;">
+        <div class = "visitors-followers">
+            <img style="transform: translateY(-8px);" src="https://hits.sh/myportfolio.netlify.app.svg?label=👀+Profile+Views&style=for-the-badge&color=6d28d9&labelColor=111827&extraCount=55555"/>
+            <div style = "display: flex; margin-top: 13px;">
+                <p color = "white">40,000+ @ </p>
+                <a href="https://www.linkedin.com/in/rohan-samuel" target="_blank">
+                    <img src="Social/Linkedin.png" alt="Linkedin" style="height: 30px; margin-left: 8px;">
+                </a>
+            </div>
+        </div>
+        <div><button id="changeTheme">Change Theme</button></div>
+    </div>
+
     <main class="container">
         <section id="about">
             <div class="themeDiv">
-                <div class = "visitors-followers"><br>
-                    <img  src="https://hits.sh/myportfolio.netlify.app.svg?label=👀+Profile+Views&style=for-the-badge&color=6d28d9&labelColor=111827&extraCount=55555"/>
-                    <div style = "display: flex; margin-top: 13px;">
-                        <p color = "white">40,000+ @ </p>
-                        <a href="https://www.linkedin.com/in/rohan-samuel" target="_blank">
-                            <img src="Social/Linkedin.png" alt="Linkedin" style="height: 30px; margin-left: 8px;">
-                        </a>
-                    </div>
-                </div>
-                <div></div><div></div><div></div>
-                <div></div><div></div><div></div>
                 <div><h2 class="abt">About Me</h2></div>
-                <div></div><div></div><div></div><div></div>
-                <div></div><div></div><div></div>
-                <div><button id="changeTheme">Change Theme</button></div>
                 
             </div>
             <div class="container img-container1">
