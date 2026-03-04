@@ -14,11 +14,16 @@
     <link rel="stylesheet" href="CSS/blue.css" id="colorcss">
     <link rel="icon" href="Images/profile.jpg" type="image/x-icon">
     <style>
-      @media (min-width: 1024px) {
+    .translate-desktop {
+        transform: scale(0.75); /* shrink on mobile/tablet */
+        transform-origin: top left; /* scale from top-left corner */
+    }
+
+    @media (min-width: 1024px) {
         .translate-desktop {
-          transform: translateX(120px);
+        transform: translateX(120px) scale(1); /* full size + shift on desktop */
         }
-      }
+    }
     </style>
 </head>
 <body>
@@ -84,8 +89,8 @@
                 <div></div><div></div><div></div>
                 <div><h2 class="abt">About Me</h2></div>
                 <div></div><div></div><div></div><div></div>
-                <div class="translate-desktop">
-                    <img src="https://hits.sh/rohan-samuel-portfolio.netlify.app.svg?label=👀+Profile+Views&style=for-the-badge&color=6d28d9&labelColor=111827&extraCount=22222"/><br><br>
+                <div class = "translate-desktop">
+                    <img src="https://hits.sh/https://rohan-samuel-portfolio.netlify.app/.svg?label=👀+Profile+Views&style=for-the-badge&color=6d28d9&labelColor=111827&extraCount=55555"/><br><br>
                     <div style = "display: flex;">
                         <p color = "white">40,000+ @ </p>
                         <a href="https://www.linkedin.com/in/rohan-samuel" target="_blank">
@@ -776,10 +781,6 @@
 
 
  
-
-
-
-
 
 
 
